@@ -1,7 +1,8 @@
 package com.ibm.inventory_management.controllers;
-import java.util.ArrayList;
+
 import java.util.List;
 
+import com.ibm.inventory_management.models.StockItem;
 import com.ibm.inventory_management.services.StockItemApi;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,7 @@ public class StockItemController {
     }
 
     @GetMapping(path = "/stock-items", produces = "application/json")
-    public List listStockItems() {
+    public List<StockItem> listStockItems() {
         return this.service.listStockItems();
     }
 }
