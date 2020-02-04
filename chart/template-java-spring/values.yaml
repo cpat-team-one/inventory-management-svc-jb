@@ -3,6 +3,9 @@
 # Declare variables to be passed into your templates.
 global: {}
 
+cloudantBinding: binding-mooc-cpat-ocp01-cloudant
+databaseName: inventory-dev-jb
+
 replicaCount: 1
 logLevel: "INFO"
 

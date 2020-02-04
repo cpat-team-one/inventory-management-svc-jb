@@ -44,3 +44,4 @@ pipeline-build-config.json
 
 .settings/
 .vscode/
+.DS_Store
